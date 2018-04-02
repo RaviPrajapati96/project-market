@@ -1,0 +1,68 @@
+input
+{
+	width:70%;
+	outline:none;
+	padding:10px 11px;
+	border:1px #aaa solid;
+	font-size:15px;
+	background:#fff;
+	display:block;
+	margin:20px auto;
+}
+#login
+{
+	height:50px;
+	border-radius:none;
+	color:#fff;
+	background:#6cde8f ;
+	text-align:center;
+    cursor: pointer;
+}
+body
+{
+	background:url(html-background-image-HD3.jpg);
+	backgroud-size:auto;
+	margin:0;
+}
+	
+div
+{   text-align:center;
+	width:30%;
+	height:400px;
+	background:rgba(0,0,0,.2);
+	box-shadow:5px 4px 43px #000;
+	position:absolute;
+	top:180px;
+	left:500px;
+}
+form
+{
+	margin:30px auto;
+	text-align:center;
+}
+b
+{
+	text-align:center;
+	font-size:25px;
+	color:#fff;
+}
+a
+{
+	margin:20px auto;
+	color:#fff;
+	style:none;
+}
+img
+{
+	border-radius:50%;
+	height:100;
+	width:105;
+	display:block;
+	margin:-75px auto 0 auto;
+}
+
+a:link 
+{
+    text-decoration: none;
+	text-transform: uppercase;
+}

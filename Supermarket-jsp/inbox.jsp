@@ -1,0 +1,71 @@
+<%@ page import="java.sql.*" %>
+
+<%!
+    ResultSet rs;
+	Connection con;
+	PreparedStatement ps;
+	String Name;
+ %>
+ <%
+ 
+  String Username=(String)(session.getAttribute("UserName"));
+ 
+  try
+		{
+			Class.forName("com.mysql.jdbc.Driver");
+			con=DriverManager.getConnection("jdbc:mysql:///login","root","root");
+			ps=con.prepareStatement("select username,name from Usersignup");
+			rs=ps.executeQuery();
+			while(rs.next())
+			{
+				if((Username.equals(rs.getString("username") )) )
+				{
+					
+					Name=rs.getString("name");
+					break;
+				}
+			}
+		}
+	catch(Exception e)
+					{
+						out.print(e);
+					}
+ %>
+<html>
+<head>
+<link rel="stylesheet" href="inbox.css">
+<style="text/css">
+</style>
+<body>
+
+
+<div class="main">
+<div class="header">
+<img class="logo" src="index.png">
+<b> SUPERMARKET</b>
+<h2><%=Name%></h2>
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+  <input type="text" name="search" placeholder="Search..">
+</ul>
+</div>
+<div class="columnL">
+<div class="cont">
+<b>categories</b>
+</div>
+<a href="#"><button class="button"> electronics</button></a></br>
+<a href="#"><button class="button"> Food</button></a></br>
+<a href="#"><button class="button">Grocery</button></a></br>
+<a href="#"><button class="button"> clothes</button></a></br>
+<a href="#"><button class="button"> items	</button></a></br>
+</div>
+<div class="columnR"></div>
+<div class="foooter"></div> 
+</div>
+
+
+</body>
+</html>

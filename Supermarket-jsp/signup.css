@@ -1,0 +1,65 @@
+body
+{
+	
+	background:rgba(0,0,0,.2);
+	box-shadow:5px 4px 43px #000;
+margin:0;
+paddin:0;
+background:#3cc47c;
+background-size:cover;
+background-position:center;
+font-family:san-serif;
+padding:70px 30px;
+}
+.signup
+{
+	
+	background:rgba(0,0,0,.2);
+	box-shadow:5px 4px 43px #000;
+width:320px;
+height:550px;
+background:#000;
+color:#fff;
+top:50%;
+left:50%;
+position:absolute;
+transform:translate(-50%,-50%);
+box-sizing:border-box;
+padding:10px;
+}
+input
+{
+	width:250px;
+	height:30px;
+	border:none;
+	border-bottom:1px solid #fff;
+	background:transparent;
+	outline:none;
+	color:#fff;
+	font-size:16px;
+	
+	
+}
+input[type=submit]
+{
+	margin-left:10px;
+	text-align:center;
+	background:#DC143C;
+	border:1px solid grey;
+	padding:20px;
+}
+.avator
+{
+	width:100px;
+	height:100px;
+	border-radius:50%;
+	position:absolute;
+	top:-80px;
+	left:35%;
+}
+h1
+{
+	margin top:30px;
+	paddig:0 0 20px;
+	text-align:center;
+	font-size:20px;

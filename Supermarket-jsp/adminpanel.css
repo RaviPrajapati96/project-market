@@ -1,0 +1,41 @@
+*
+{
+	margin:0;
+	padding:0;
+}
+.body1
+{
+	margin:0;
+	padding:0;
+}
+.header
+{
+	margin:0;
+	height:50px;
+	width:100%;
+	background:#34495e;
+}
+h2
+{
+	
+	margin-left:20px;
+	margin-top:20px;
+	color:white;
+}
+.headerL
+{
+	background: #566573;
+	width:17%;
+	height:500px;
+}
+input[type=button]
+{
+	margin-top:20px;
+	margin-left:50px;
+	height:40px;
+	width:120px;
+	background: #17202a ;
+	text-align:center;
+	color:white;
+	border:none;
+}
